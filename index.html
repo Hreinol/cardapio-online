@@ -41,6 +41,7 @@
             <h1 class="text-3xl sm:text-4xl font-bold text-green-700">HS Cozinha Caseira</h1>
             <h1 class="text-3xl sm:text-4xl font-bold text-green-700">Cardápio Marmitinhas Saudáveis</h1>
             <p class="text-gray-600 mt-2">Escolha os pratos, preencha seus dados e forma de pagamento para pedir.</p>
+            <p class="text-gray-600 mt-2">Cardápio com as opções personalizáveis por encomenda!!</p>
         </header>
 
         <!-- Pricing Info -->
@@ -151,9 +152,9 @@
                 { name: "Picadinho Bovino", desc: "Arroz e feijão." },
                 { name: "Filé de Sobrecoxa Assada", desc: "Arroz com legumes e legumes no vapor." },
                 { name: "Carne de Panela", desc: "Purê de abóbora e mix legumes assados." },
-                { name: "Carne Moída 1", desc: "Purê de mandioquinha/batata e legumes no vapor." },
-                { name: "Carne Moída 2", desc: "Purê de abóbora e legumes no vapor." },
-                { name: "Carne Moída 3", desc: "Arroz e legumes no vapor." },
+                { name: "Carne Moída c/ Purê Mandioquinha", desc: "Purê de mandioquinha/batata e legumes no vapor." },
+                { name: "Carne Moída c/ Purê Abóbora", desc: "Purê de abóbora e legumes no vapor." },
+                { name: "Carne Moída c/ Legumes", desc: "Arroz e legumes no vapor." },
                 { name: "Filé de Frango Grelhado", desc: "Molho branco, queijo, arroz integral e legumes assados." },
                 { name: "Frango em Cubos Grelhado", desc: "Couve Flor com Molho branco Gratinado, cenoura e vagem no vapor." },
                 { name: "Galinhada Fit", desc: "Arroz integral e cubos de frango." },
@@ -167,9 +168,9 @@
                 { name: "Mini Panquecas de Frango", desc: "Molho ao sugo e queijo - Massa de couve, beterraba ou cenoura (sem glúten)." },
                 { name: "Panqueca Tradicional", desc: "Ricota com espinafre c/ molho ao sugo." },
                 { name: "Torta de Frango", desc: "Frango desfiado com molho e milho verde." },
-                { name: "Nhoque de Batata 1", desc: "Recheado com queijo e tomate seco. Molho ao sugo (sem glúten)." },
-                { name: "Nhoque de Batata 2", desc: "Recheado com queijo. Molho ao sugo (sem glúten)." },
-                { name: "Nhoque de Batata 3", desc: "Recheado com provolone. Molho ao sugo (sem glúten)." },
+                { name: "Nhoque de Batata c/ Tomate Seco", desc: "Recheado com queijo e tomate seco. Molho ao sugo (sem glúten)." },
+                { name: "Nhoque de Batata c/ Mussarela", desc: "Recheado com queijo. Molho ao sugo (sem glúten)." },
+                { name: "Nhoque de Batata c/ Provolone", desc: "Recheado com provolone. Molho ao sugo (sem glúten)." },
                 { name: "Macarrão à Bolonhesa", desc: "Macarrão ao molho bolonhesa." }
             ],
             "Caldos e Sopas": [
@@ -317,7 +318,7 @@
             const total = totalCount * pricePerItem;
 
             // Montagem da mensagem
-            let message = "Olá, Sônia! Gostaria de fazer um novo pedido:\n\n";
+            let message = "Olá, HS Cozinha Caseira! Gostaria de fazer um novo pedido:\n\n";
             message += "========================\n";
             message += "*DADOS PARA ENTREGA:*\n";
             message += `*Nome:* ${formName.value.trim()}\n`;
@@ -362,5 +363,6 @@
     </script>
 </body>
 </html>
+
 
 
